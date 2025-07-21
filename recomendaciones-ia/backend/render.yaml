@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: recomendaciones-backend
+    env: node
+    plan: free
+    region: oregon
+    buildCommand: "npm install"
+    startCommand: "node index.js"
+    rootDir: backend
+    envVars:
+      - key: MONGO_URI
+        value: "mongodb+srv://greyjarquin:DyQAUYKJZO7gtW3r@cineversecluster.mongodb.net/cineverse?retryWrites=true&w=majority"
+      - key: OPENROUTER_API_KEY
+        value: "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"
