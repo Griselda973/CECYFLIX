@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const peliculasRouter = require('./routes/peliculas');
+const peliculasRouter = require('./routers/peliculas');
 require('dotenv').config();
 
 const app = express();
